@@ -1,15 +1,14 @@
 module.exports = {
-  whitelistPatterns: [/trix-*/],
   plugins: [
-    require('postcss-import'),
-    require('postcss-flexbugs-fixes'),
-    require('tailwindcss'),
-    require('postcss-preset-env')({
+    require("postcss-import"),
+    require("postcss-flexbugs-fixes"),
+    require("postcss-preset-env")({
       autoprefixer: {
-        flexbox: 'no-2009'
+        flexbox: "no-2009",
       },
-      stage: 3
-    })
-    
-  ]
-}
+      stage: 3,
+    }),
+    require("tailwindcss"),
+    require("autoprefixer"),
+  ],
+};
